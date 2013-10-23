@@ -75,7 +75,7 @@ class ActiveDirectoryAuthenticationBackend(ModelBackend):
             user.is_staff = True
             user.is_superuser = True
         elif userInfo:
-            user.is_staff = True
+            user.is_staff = False
             user.is_superuser = False
         else:
             user.is_active = False
